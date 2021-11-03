@@ -5,7 +5,7 @@
  */
     function traerInformacionMotos() {
         $.ajax({
-            url: "http://152.70.212.97:8080/api/Motorbike/all",
+            url: "http://129.151.108.58:8080/api/Motorbike/all",
             type: "GET",
             datatype: "JSON",
             success: function (respuesta) {
@@ -64,7 +64,7 @@
             contentType: "application/json; charset=utf-8",
             dataType: 'JSON',
             data: JSON.stringify(var3),
-            url: "http://152.70.212.97:8080/api/Motorbike/save",
+            url: "http://129.151.108.58:8080/api/Motorbike/save",
             success: function (response) {
                 console.log(response);
                 console.log("(api/Moto/save) -> Registro almacenado correctamente");
@@ -88,7 +88,7 @@
         };
         let dataToSend = JSON.stringify(myData);
         $.ajax({
-            url: "http://152.70.212.97:8080/api/Moto/"+idElemento,
+            url: "http://129.151.108.58:8080/api/Moto/"+idElemento,
             type: "DELETE",
             data: dataToSend,
             contentType: "application/JSON",
@@ -108,7 +108,7 @@
  */
 function traerInformacionClientes() {
     $.ajax({
-        url: "http://152.70.212.97:8080/api/Client/all",
+        url: "http://129.151.108.58:8080/api/Client/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -161,7 +161,7 @@ function guardarInformacionClientes() {
         contentType: "application/json; charset=utf-8",
         dataType: 'JSON',
         data: JSON.stringify(var4),
-        url: "http://152.70.212.97:8080/api/Client/save",
+        url: "http://129.151.108.58:8080/api/Client/save",
         success: function (response) {
             console.log(response);
             console.log("Registro almacenado correctamente");
@@ -182,7 +182,7 @@ function guardarInformacionClientes() {
  */
     function traerInformacionCategorias() {
         $.ajax({
-            url: "http://152.70.212.97:8080/api/Category/all",
+            url: "http://129.151.108.58:8080/api/Category/all",
             type: "GET",
             datatype: "JSON",
             success: function (respuesta) {
@@ -229,7 +229,7 @@ function guardarInformacionClientes() {
             contentType: "application/json; charset=utf-8",
             dataType: 'JSON',
             data: JSON.stringify(var2),
-            url: "http://152.70.212.97:8080/api/Category/save",
+            url: "http://129.151.108.58:8080/api/Category/save",
             success: function (response) {
                 console.log(response);
                 console.log("Registro almacenado correctamente");
@@ -252,7 +252,7 @@ function guardarInformacionClientes() {
     */
     function traerInformacionMensajes() {
         $.ajax({
-            url: "http://152.70.212.97:8080/api/Message/all",
+            url: "http://129.151.108.58:8080/api/Message/all",
             type: "GET",
             datatype: "JSON",
             success: function (respuesta) {
@@ -264,7 +264,7 @@ function guardarInformacionClientes() {
 
     function autoInicioRelacionCliente(){
         $.ajax({
-            url:"http://152.70.212.97:8080/api/Client/all",
+            url:"http://129.151.108.58:8080/api/Client/all",
             type:"GET",
             datatype:"JSON",
             success:function(respuesta){
@@ -278,7 +278,7 @@ function guardarInformacionClientes() {
 
     function autoInicioMoto(){
         $.ajax({
-            url:"http://152.70.212.97:8080/api/Motorbike/all",
+            url:"http://129.151.108.58:8080/api/Motorbike/all",
             type:"GET",
             datatype:"JSON",
             success:function(respuesta){
@@ -336,7 +336,7 @@ function guardarInformacionClientes() {
                 contentType: "application/json; charset=utf-8",
                 dataType: 'JSON',
                 data: JSON.stringify(var2),
-                url:"http://152.70.212.97:8080/api/Message/save",
+                url:"http://129.151.108.58:8080/api/Message/save",
                 success:function(response) {
                         console.log(response);
                     console.log("Se guardo correctamente");
@@ -361,7 +361,7 @@ function guardarInformacionClientes() {
         console.log(myData);
         let dataToSend=JSON.stringify(myData);
         $.ajax({
-            url:"http://152.70.212.97:8080/api/Message/update",
+            url:"http://129.151.108.58:8080/api/Message/update",
             type:"PUT",
             data:dataToSend,
             contentType:"application/JSON",
@@ -382,7 +382,7 @@ function guardarInformacionClientes() {
         let dataToSend=JSON.stringify(myData);
         console.log(dataToSend);
         $.ajax({
-            url:"http://152.70.212.97:8080/api/Message/"+idElemento,
+            url:"http://129.151.108.58:8080/api/Message/"+idElemento,
             type:"DELETE",
             data:dataToSend,
             contentType:"application/JSON",
@@ -404,7 +404,7 @@ function guardarInformacionClientes() {
     */
         function traerInformacionReservaciones() {
             $.ajax({
-                url: "http://152.70.212.97:8080/api/Reservation/all",
+                url: "http://129.151.108.58:8080/api/Reservation/all",
                 type: "GET",
                 datatype: "JSON",
                 success: function (respuesta) {
@@ -464,7 +464,7 @@ function guardarInformacionClientes() {
                 $.ajax({
                     type: "POST",
                     contentType: "application/json",
-                    url:"http://152.70.212.97:8080/api/Reservation/save",
+                    url:"http://129.151.108.58:8080/api/Reservation/save",
                     data: dataToSend,
                     datatype: "json",
                     success: function (response) {
@@ -495,7 +495,7 @@ function guardarInformacionClientes() {
                 {
                     dataType: 'json',
                     data: dataToSend,
-                    url:"http://152.70.212.97:8080/api/Reservation/"+idElemento,
+                    url:"http://129.151.108.58:8080/api/Reservation/"+idElemento,
                     type: 'DELETE',
                     contentType: "application/JSON",
                     success: function (response) {
@@ -513,7 +513,7 @@ function guardarInformacionClientes() {
         function cargarDatosReservation(id) {
             $.ajax({
                 dataType: 'json',
-                url:"http://152.70.212.97:8080/api/Reservation/"+id,
+                url:"http://129.151.108.58:8080/api/Reservation/"+id,
                 type: 'GET',
                 success: function (response) {
                     console.log(response);
@@ -545,7 +545,7 @@ function guardarInformacionClientes() {
                     datatype: 'json',
                     data: dataToSend,
                     contentType: "application/JSON",
-                    url:"http://152.70.212.97:8080/api/Reservation/update",
+                    url:"http://129.151.108.58:8080/api/Reservation/update",
                     type: "PUT",
                     success: function (response) {
                         console.log(response);
@@ -574,7 +574,7 @@ function guardarInformacionClientes() {
     function traerReporteStatus(){
         console.log("test");
         $.ajax({
-            url:"http://152.70.212.97:8080/api/Reservation/report-status",
+            url:"http://129.151.108.58:8080/api/Reservation/report-status",
             type:"GET",
             datatype:"JSON",
             success:function(respuesta){
@@ -602,7 +602,7 @@ function guardarInformacionClientes() {
         console.log(fechaInicio);
         console.log(fechaCierre);
             $.ajax({
-                url:"http://152.70.212.97:8080/api/Reservation/report-dates/"+fechaInicio+"/"+fechaCierre,
+                url:"http://129.151.108.58:8080/api/Reservation/report-dates/"+fechaInicio+"/"+fechaCierre,
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){
@@ -628,7 +628,7 @@ function guardarInformacionClientes() {
     
         function traerReporteClientes(){
             $.ajax({
-                url:"http://152.70.212.97:8080/api/Reservation/report-clients",
+                url:"http://129.151.108.58:8080/api/Reservation/report-clients",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){
